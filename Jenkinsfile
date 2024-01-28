@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "testing webhook"  // Add this line
                 sh '/opt/apache-maven-3.9.6/bin/mvn -B -DskipTests clean package'
             }
         }
