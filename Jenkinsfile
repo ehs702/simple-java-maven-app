@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh '/opt/apache-maven-3.9.6/bin/mvn test'
             }
             post {
                 always {
